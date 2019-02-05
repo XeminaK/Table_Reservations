@@ -55,8 +55,7 @@ h4 {
 }
 
 .reserved {
-    /* background-color: #ADAAAA; */
-    background-color: red;
+    background-color: #ADAAAA; 
     color: #EEE;
 }
 
