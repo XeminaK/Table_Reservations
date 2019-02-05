@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+    <section class="top">
+        <h4>Table Finder</h4>
+        <p class="pickTable">Pick your table now</p>
+    </section>
+
+
+    <section class="middle">
+        <section class="row">
+            <button class="available circle" id="1">1</button>
+            <button class="available circle" id="2">2</button>
+            <button class="available circle" id="3">3</button>
+        </section>
+
+        <section class="row">
+            <button class="available circle" id="4">4</button>
+            <button class="available circle" id="5">5</button>
+            <button class="available circle" id="6">6</button>
+        </section>
+
+        <section class="row">
+            <button class="circle" id="7">7</button>
+            <button class="available circle" id="8">8</button>
+            <button class="available circle" id="9">9</button>
+        </section>
+    </section>
+
+    <section class=reservation>
+        <div class="closeButton">
+            <img src="close icon.png">
+        </div>
+        <p class="newRes">New Reservation</p>
+        <p class="tableNum"></p>
+        <input type="text" name="name" placeholder="Insert Name Here">
+        <input type="text" name="phone" placeholder="xxx-xxxx">
+        <input type="text" name="partySize" placeholder="What's the size of your party?">
+        <button class="saveButton">SAVE</button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
