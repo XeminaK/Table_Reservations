@@ -105,3 +105,16 @@ h4 {
     margin-top: 10px;
     margin-bottom: 10px; */
  }
+
+ .hover {
+    color: white;
+    background-color: #eee;
+ }
+
+ .tooltip {
+     color: black;
+     background-color: #ccc;
+     height: 50x;
+     width: 100px;
+     font-family: Rubik; 
+ }

@@ -40,16 +40,42 @@ $(".circle").on("mouseover", function(e) { //if you mouseover the circles, you c
 
     if ($(e.target).hasClass("available")) { //if the object you are hovering over has an "available" class
         // console.log(e.target); //print it to the console to test///////
-        $(e.target).css("backgroundColor", "#eee"); //change the target object's background to red
-        $(e.target).css("color", "white");
-
-        //then use mouse out method to change color back
-        $(".circle").on("mouseout", function(e) { 
-            $(e.target).css("backgroundColor", "#ccc"); //changes color back to original color
-            $(e.target).css("color", "black");
-         })
+        // $(e.target).css("background-color", "#eee"); //change the target object's background to red
+        // $(e.target).css("color", "white"); //changed these properties to a hover class
+        $(e.target).toggleClass("hover"); //this switches the class to hover
     }  //end if statement
 
 });
 
+//then use mouse leave method to change color back
+$(".circle").on("mouseleave", function(e) {
+    $(e.target).toggleClass("hover"); //toggle the class to hover
+    // $(e.target).css("background-color", "#ccc"); //changes color back to original color
+    // $(e.target).css("color", "black");
+ })
+
+
 });
+
+//////Adam's Example/////////
+
+//you want to target the document because if you ever add another div with jquery, the click event will not be added to it
+
+
+// let selectedTable = null
+// $(document).on("click", ".available", function(e) {
+//     $(".form").fadeIn(2000);
+//     selectedTable = e.target;
+//     console.log(seletecedTable.innerText);
+// )};
+
+// $(document).on("click", "button", function(e) {
+//     $(selectedTable).removeClass("available").addClass("reserved");
+// });
+
+// //////vanilla javascript way////////
+// document.addEventListener("click", function(e) {
+//     if (e.target.tagName ==== "DIV") {
+//         console.log("yay");
+//     }
+// })

@@ -31,7 +31,7 @@
         </section>
 
         <section class="row">
-            <button class="circle" id="7">7</button>
+            <button class="available circle" id="7">7</button>
             <button class="available circle" id="8">8</button>
             <button class="available circle" id="9">9</button>
         </section>
@@ -43,13 +43,15 @@
         </div>
         <p class="newRes">New Reservation</p>
         <p class="tableNum"></p>
-        <input type="text" name="name" placeholder="Insert Name Here">
-        <input type="text" name="phone" placeholder="xxx-xxxx">
-        <input type="text" name="partySize" placeholder="What's the size of your party?">
-        <button class="saveButton">SAVE</button>
+        <input type="text" name="name" class="clearForm name" placeholder="Insert Name Here">
+        <input type="text" name="phone" class="clearForm phone" placeholder="xxx-xxxx">
+        <input type="text" name="partySize" class="clearForm partySize" placeholder="What's the size of your party?">
+        <button type="button" class="saveButton">SAVE</button> 
+        <!-- You need type = button to make sure it doesn't refresh when you click it -->
+        <!-- If you have type submit or type save, it will refresh your browser automatically -->
     </section>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="script.js"></script>
+    <script src="script3.js"></script>
 </body>
 </html>
